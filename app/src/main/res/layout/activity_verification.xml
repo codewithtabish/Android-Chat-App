@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context=".Authentication.VerificationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <ImageView
+            android:id="@+id/verifyImage"
+            android:layout_width="0dp"
+
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/five"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/verificationCodeTitlt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="Verification Code"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+
+            app:layout_constraintEnd_toEndOf="@+id/verifyImage"
+            app:layout_constraintStart_toStartOf="@+id/verifyImage"
+            app:layout_constraintTop_toBottomOf="@+id/verifyImage" />
+
+        <TextView
+            android:id="@+id/verifySubtext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/merienda_one"
+
+            android:justificationMode="inter_word"
+            android:lineHeight="22dp"
+            android:text="@string/textsub"
+            android:textAlignment="center"
+            android:textColor="#3C3A3A"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/verificationCodeTitlt" />
+
+
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/colorPrimary"
+            app:bar_active_color="@color/colorPrimary"
+            app:bar_enabled="true"
+            app:bar_height="3dp"
+            app:bar_inactive_color="@color/colorPrimary"
+
+            app:height="40dp"
+            app:layout_constraintEnd_toEndOf="@+id/verifySubtext"
+            app:layout_constraintStart_toStartOf="@+id/verifySubtext"
+            app:layout_constraintTop_toBottomOf="@+id/verifySubtext"
+            app:length="4"
+            app:otp=""
+
+            app:otp_text_size="24dp"
+            app:width="40dp"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

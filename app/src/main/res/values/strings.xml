@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ChattingAPP</string>
+    <string name="textsub">please enter the verification code sent to your mobile number</string>
+</resources>

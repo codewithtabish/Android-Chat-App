@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- res/values/colors.xml -->
+
+        <!-- App colors -->
+        <color name="colorPrimary">#3F51B5</color>
+        <color name="colorPrimaryDark">#303F9F</color>
+        <color name="colorAccent">#FF4081</color>
+
+        <!-- Chat-related colors -->
+        <color name="chatBackground">#ECE5DD</color>
+        <color name="chatSenderBubble">#2196F3</color>
+        <color name="chatReceiverBubble">#FFFFFF</color>
+        <color name="chatSenderText">#FFFFFF</color>
+        <color name="chatReceiverText">#000000</color>
+
+</resources>
